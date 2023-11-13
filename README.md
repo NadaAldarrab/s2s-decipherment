@@ -36,3 +36,15 @@ python truncateData.py file_path word_length
 ```bash
 python Tokenizer.py file_path
 ```
+
+
+# Data Evaluation
+
+### Description
+
+`evaluation.py` evaluates the performance of model based on ter score
+### Usage
+
+```bash
+python evaluation.py decipher_path plain_text_path
+```
