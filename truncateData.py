@@ -16,10 +16,10 @@ def truncateData(file_path, line_length=64):
                 # Check if the line without spaces is less than or equal to 64 characters
                 if len(line_without_spaces) <= line_length:
                     # If the modified line is within the desired length, write it to the output file
-                    output_file.write(line)
+                    output_file.write(line_without_spaces)
                 else:
                     # If the modified line is longer, trim it to the desired line length and then write it
-                    truncated_line = ' '.join(line_without_spaces[:line_length]) + '\n'
+                    truncated_line = line_without_spaces[:line_length] + '\n'
                     output_file.write(truncated_line)
                     
                     
