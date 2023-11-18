@@ -25,7 +25,17 @@ python dataLoader.py
 ```bash
 python truncateData.py file_path word_length
 ```
-## 3. dataTokenizer.py
+## 3. preprocessData.py
+
+### Description
+
+`preprocessData.py` preprocesses the truncated data to lowercases, stripes punctuations, change whitespaces into underscores, and modifies text into character level, which are the necessary preprocesses to run a character level transformer model.
+### Usage
+
+```bash
+python preprocessData.py input_path output_path
+```
+## 4. dataTokenizer.py
 
 ### Description
 
