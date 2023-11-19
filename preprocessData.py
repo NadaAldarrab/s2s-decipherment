@@ -21,7 +21,7 @@ def preprocessData(file_path, line_length=64):
                 # Check if the line with underscores is less than or equal to 64 characters
                 if len(line_with_underscores) <= line_length:
                     # If the modified line is within the desired length, write it to the output file
-                    output_line = ' '.join(line_with_underscores) + '\n'
+                    processed_line = ' '.join(line_with_underscores) + '\n'
                     # Write line to file
                     output_file.write(processed_line)
                 else:
