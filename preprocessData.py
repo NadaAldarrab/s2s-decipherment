@@ -31,12 +31,12 @@ def preprocessData(file_path, line_length=64):
                     output_file.write(processed_line)
 
 def main():
-    parser = argparse.ArgumentParser(description='Preprocess data by modifying data into lowercase, stripping punctuation, and changing whitespaces into underscores')
-    parser.add_argument('input_path', help='Path of file that needs to be processed')
-    parser.add_argument('output_path', help='Path of file after processed')
+    parser = argparse.ArgumentParser(description='Preprocess data by modifying data into lowercase, stripping punctuation, changing whitespaces into underscores, and trimming line length')
+    parser.add_argument('file_path', help='Path of file that needs to be processed')
+    parser.add_argument('--word_length', type=int, default=64, help='The desired word length.')
 
     args = parser.parse_args()
-    preprocessData(args.input_path, args.output_path)
+    preprocessData(args.file_path, args.word_length)
     
 if __name__ == "__main__":
     main()
