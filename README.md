@@ -29,7 +29,7 @@ python truncateData.py file_path word_length
 
 ### Description
 
-`preprocessData.py` preprocesses the truncated data to lowercases, stripes punctuations, change whitespaces into underscores, and modifies text into character level, which are the necessary preprocesses to run a character level transformer model.
+`preprocessData.py` preprocesses the truncated data to lowercases, stripes punctuations, changes whitespaces into underscores, and modifies text into character level, which are the necessary preprocesses to run a character level transformer model.
 ### Usage
 
 ```bash
