@@ -37,6 +37,24 @@ python truncateData.py file_path word_length
 python Tokenizer.py file_path
 ```
 
+# Model Training
+
+### Set Up
+Run setUp.sh to create configuration file for training, run modifyConfig.py to change parameters as needed.
+
+### Training
+Run the following command in terminal to start training:
+```bash
+rtg-pipe 01-tfm-deen --gpu-only
+```
+
+### Decoding
+After model is trained, run the following command to perform decoding on extra test sets:
+```bash
+rtg-decode 01-tfm-deen -if [input_file_path] -of [output_file_path]
+```
+
+
 
 # Data Evaluation
 
