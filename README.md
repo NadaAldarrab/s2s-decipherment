@@ -19,13 +19,27 @@ python dataLoader.py
 
 ### Description
 
-`truncateData.py` truncates the loaded data to a desired length, a useful step when dealing with large datasets and you want to work with a subset of the data.
+`truncateData.py` truncates the loaded data to a desired length (Default = 64 characters), a useful step when dealing with large datasets and you want to work with a subset of the data. Onlu use this on preprocessed text (Character-level and underscore separated).
 ### Usage
 
 ```bash
 python truncateData.py file_path word_length
 ```
-## 3. dataTokenizer.py
+## 3. preprocessData.py
+
+### Description
+
+`preprocessData.py` truncates the loaded data to a desired length (Default = 64 characters), processes all characters to lowercases, stripes punctuations, changes whitespaces into underscores, and modifies text into character level, which are the necessary preprocesses to run a character level transformer model. Only use this on unpreprocessed text.
+### Usage
+
+```bash
+python preprocessData.py file_path
+```
+or with customized word length
+```bash
+python preprocessData.py file_path word_length
+```
+## 4. dataTokenizer.py
 
 ### Description
 
