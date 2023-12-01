@@ -26,7 +26,7 @@ def main():
     parser.add_argument('plain_text_path', help='path of plain text ground truth')
 
     args = parser.parse_args()
-    score = ter(args.decipher_path, args.plain_text_path)
+    score = ter(args.decipher_path, args.plain_text_path)*100
     print("Average TER score: ", score)
     
 if __name__ == "__main__":
